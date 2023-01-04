@@ -27,3 +27,8 @@ body {
 .input::placeholder {
     color: lightgrey;
 }
+
+.list {
+    padding: 0;
+    margin: 0;
+}
