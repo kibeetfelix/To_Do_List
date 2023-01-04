@@ -37,4 +37,6 @@ body {
     list-style-type: none;
     margin: 20px;
     font-family: cursive;
+    border-top: dotted;
+    border-color: darkgrey;
 }
