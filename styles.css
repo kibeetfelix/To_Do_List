@@ -3,3 +3,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+    width: 80%;
+    background-color: lightpink;
+    border-radius: 10px;
+}
