@@ -51,6 +51,7 @@ body {
     cursor: pointer;
     border: solid 2px red;
     padding: 5px;
+    border-radius: 20px;
 }
 
 .list li .fa-check-square {
@@ -62,4 +63,5 @@ body {
     cursor: pointer;
     border: solid 2px green;
     padding: 5px;
+    border-radius: 20px;
 }
