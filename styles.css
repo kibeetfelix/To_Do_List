@@ -9,7 +9,7 @@ body {
     top: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
     width: 80%;
-    background-color: lightpink;
+    background-color: yellow;
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@ body {
     list-style-type: none;
     padding: 20px;
     font-family: cursive;
-    border-top: dotted;
+    border-top: solid 1px greenyellow;
     border-color: darkgrey;
     position: relative;
 }
@@ -49,17 +49,17 @@ body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    border: solid 2px grey;
-    padding: 1px;
+    border: solid 2px red;
+    padding: 5px;
 }
 
 .list li .fa-check-square {
     color: green;
     position: absolute;
-    right: 45px;
+    right: 60px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    border: solid 2px white;
-    padding: 1px;
+    border: solid 2px green;
+    padding: 5px;
 }
