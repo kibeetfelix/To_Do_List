@@ -39,26 +39,27 @@ body {
     font-family: cursive;
     border-top: dotted;
     border-color: darkgrey;
+    position: relative;
 }
 
 .list li .fa-trash {
     color: red;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     border: solid 2px grey;
-    padding: 5px;
+    padding: 1px;
 }
 
 .list li .fa-check-square {
     color: green;
     position: absolute;
-    right: 60px;
+    right: 45px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    border: solid 2px grey;
-    padding: 5px;
+    border: solid 2px white;
+    padding: 1px;
 }
