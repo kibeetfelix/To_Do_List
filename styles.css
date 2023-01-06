@@ -35,8 +35,17 @@ body {
 
 .list li {
     list-style-type: none;
-    margin: 20px;
+    padding: 20px;
     font-family: cursive;
     border-top: dotted;
     border-color: darkgrey;
+}
+
+.list li .fa-trash {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
