@@ -9,5 +9,7 @@ formEl.addEventListener("submit", (event) => {
 });
 
 function toDoList() {
-
+    let newTask = inputEl.value;
+    const liEl = document.createElement("li");
+    liEl.innerText = newTask;
 }
