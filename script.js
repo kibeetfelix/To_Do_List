@@ -33,5 +33,8 @@ function toDoList() {
         liEl.classList.toggle("checked")
     });
 
-
+    // addEventListener to trash button
+    trashBtnEl.addEventListener("click", () => {
+        liEl.remove();
+    });
 }
