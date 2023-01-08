@@ -51,4 +51,6 @@ function updateLocalStorage() {
         })
     })
 
+    // converting list to string using JSON
+    localStorage.setItem("list", JSON.stringify(list))
 }
