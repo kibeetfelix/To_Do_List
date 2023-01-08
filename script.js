@@ -14,4 +14,8 @@ function toDoList() {
     const liEl = document.createElement("li");
     liEl.innerText = newTask;
     ulEl.appendChild(liEl)
+    inputEl.value = ""
+    const checkBtnEl = document.createElement("div")
+    checkBtnEl.innerHTML = <i class="fa fa-check-square"></i>;
+    liEl.appendChild(trashBtnEl);
 }
