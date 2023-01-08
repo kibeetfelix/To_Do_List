@@ -38,3 +38,16 @@ function toDoList() {
         liEl.remove();
     });
 }
+
+// storing inputs added
+function updateLocalStorage() {
+    const liEls = document.querySelectorAll("li")
+    let list = []
+    liEls.forEach(liEl => {
+        list.push({
+            name: liEl.innerText,
+            checked: liEl.classList.contains("checked")
+        })
+    })
+
+}
