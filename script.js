@@ -28,5 +28,10 @@ function toDoList() {
     trashBtnEl.innerHTML = `<i class="fa fa-trash">`;
     liEl.appendChild(trashBtnEl);
 
+    // addEventListener to check button
+    checkBtnEl.addEventListener("click", () => {
+        liEl.classList.toggle("checked")
+    });
+
 
 }
