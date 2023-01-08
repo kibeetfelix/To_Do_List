@@ -14,8 +14,19 @@ function toDoList() {
     const liEl = document.createElement("li");
     liEl.innerText = newTask;
     ulEl.appendChild(liEl)
+
+    // clear inputs after enter button
     inputEl.value = ""
-    const checkBtnEl = document.createElement("div")
-    checkBtnEl.innerHTML = <i class="fa fa-check-square"></i>;
+
+    // adding check button to new entry
+    const checkBtnEl = document.createElement("div");
+    checkBtnEl.innerHTML = `<i class="fa fa-check-square">`;
+    liEl.appendChild(checkBtnEl);
+
+    // adding trash button to new entry
+    const trashBtnEl = document.createElement("div")
+    trashBtnEl.innerHTML = `<i class="fa fa-trash">`;
     liEl.appendChild(trashBtnEl);
+
+
 }

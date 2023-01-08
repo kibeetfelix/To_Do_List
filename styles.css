@@ -72,5 +72,5 @@ body {
 }
 
 li.checked .fa-check-square {
-    background-color: darkgray;
+    color: darkgray;
 }
