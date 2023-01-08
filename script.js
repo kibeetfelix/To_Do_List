@@ -37,6 +37,7 @@ function toDoList() {
     trashBtnEl.addEventListener("click", () => {
         liEl.remove();
     });
+    updateLocalStorage()
 }
 
 // storing inputs added
