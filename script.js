@@ -5,16 +5,26 @@ const inputEl = document.querySelector(".input")
 const ulEl = document.querySelector(".list")
 
 let list = JSON.parse(localStorage.getItem("list"));
-console.log(list);
+
+list.forEach(task => {
+    toDoList(task)
+})
 
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
     toDoList()
 });
 
-function toDoList() {
+function toDoList(task) {
     let newTask = inputEl.value;
+    if (task) {
+        newTask = task.name
+    }
+
     const liEl = document.createElement("li");
+    if (task && task.checked) {
+        liEl.classList.add("checked");
+    }
     liEl.innerText = newTask;
     ulEl.appendChild(liEl)
 
