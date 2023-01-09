@@ -4,6 +4,9 @@ const inputEl = document.querySelector(".input")
 
 const ulEl = document.querySelector(".list")
 
+let list = JSON.parse(localStorage.getItem("list"));
+console.log(list);
+
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
     toDoList()
@@ -36,14 +39,15 @@ function toDoList() {
     // addEventListener to trash button
     trashBtnEl.addEventListener("click", () => {
         liEl.remove();
+        updateLocalStorage();
     });
-    updateLocalStorage()
+    updateLocalStorage();
 }
 
 // storing inputs added
 function updateLocalStorage() {
     const liEls = document.querySelectorAll("li")
-    let list = []
+    list = []
     liEls.forEach(liEl => {
         list.push({
             name: liEl.innerText,
